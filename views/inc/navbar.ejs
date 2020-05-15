@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color:#23272A!important;">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/icon-152x152.png" width="50px" height="50px"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item <%if(page=='home'){%>active<%}%>">
+          <a class="nav-link" href="/">Home </a>
+        </li>
+        <li class="nav-item <%if(page=='about'){%>active<%}%>">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item <%if(page=='code'){%>active<%}%>">
+          <a class="nav-link" href="/code">Code</a>
+        </li>
+        <li class="nav-item <%if(page=='faq'){%>active<%}%>">
+          <a class="nav-link" href="/faq">FAQ</a>
+        </li>
+        <li class="nav-item <%if(page=='donate'){%>active<%}%>">
+          <a class="nav-link" href="/donate">Donate</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
