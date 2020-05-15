@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 app.set("view engine", "ejs");
-app.use(express.static("public"));
+app.set('views', `${__dirname}/public/`)
 
 require("./routes/home")(app);
 require("./routes/about")(app);
